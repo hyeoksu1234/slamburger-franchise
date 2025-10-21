@@ -2,25 +2,144 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
+  --foreground: #111111;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-slam-orange: #ff6600;
+  --color-slam-orange-light: #ff7e33;
+  --color-slam-red: #f60000;
+  --color-slam-green: #008068;
+  --color-slam-black: #111111;
+  --color-slam-white: #ffffff;
+  --color-slam-tint: #ffe7d0;
+  --font-sans: var(--font-pretendard), "Apple SD Gothic Neo", "Noto Sans KR",
+    system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: var(--font-montserrat), var(--font-pretendard),
+    "Montserrat", sans-serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  letter-spacing: -0.01em;
+  word-break: keep-all;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+}
+
+.font-tondu {
+  font-family: var(--font-tondu), var(--font-heading);
+}
+
+@media (min-width: 900px) {
+  .desktop\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  .desktop\:pt-14 {
+    padding-top: 3.5rem;
+  }
+  .desktop\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  .desktop\:pb-24 {
+    padding-bottom: 6rem;
+  }
+  .desktop\:flex-row {
+    flex-direction: row;
+  }
+  .desktop\:items-center {
+    align-items: center;
+  }
+  .desktop\:justify-between {
+    justify-content: space-between;
+  }
+  .desktop\:rounded-full {
+    border-radius: 9999px;
+  }
+  .desktop\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .desktop\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  .desktop\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .desktop\:flex {
+    display: flex;
+  }
+  .desktop\:block {
+    display: block;
+  }
+  .desktop\:hidden {
+    display: none;
+  }
+  .desktop\:grid {
+    display: grid;
+  }
+  .desktop\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .desktop\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .desktop\:gap-8 {
+    gap: 2rem;
+  }
+  .desktop\:overflow-visible {
+    overflow: visible;
+  }
+  .desktop\:grid-cols-\[1\.2fr_1fr\] {
+    grid-template-columns: 1.2fr 1fr;
+  }
+  .desktop\:grid-cols-\[1\.1fr_0\.9fr\] {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+  .desktop\:grid-cols-\[1\.2fr_0\.8fr\] {
+    grid-template-columns: 1.2fr 0.8fr;
+  }
+  .desktop\:p-10 {
+    padding: 2.5rem;
+  }
+  .desktop\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+  .desktop\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+  .desktop\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  .desktop\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .desktop\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .desktop\:items-center {
+    align-items: center;
+  }
+  .desktop\:w-\[240px\] {
+    width: 240px;
+  }
 }
