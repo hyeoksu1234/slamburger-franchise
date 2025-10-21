@@ -1,11 +1,11 @@
 "use client";
 
 import { useRef } from "react";
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 
 export type MenuItem = {
   name: string;
-  image: string;
+  image: StaticImageData;
   badge?: string;
 };
 

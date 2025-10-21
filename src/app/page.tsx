@@ -3,6 +3,28 @@ import Link from "next/link";
 import ContactForm from "@/components/contact-form";
 import FaqList from "@/components/faq-list";
 import MenuCarousel from "@/components/menu-carousel";
+import heroBackground from "@/../public/img/fullsize.jpeg";
+import logoImage from "@/../public/img/logo7.png";
+import sloganImage from "@/../public/img/slogun.png";
+import closeUpImage from "@/../public/img/close3.png";
+import menuSlamBeefBurger from "@/../public/img/menu/SLAM BEEF BURGER.png";
+import menuSlamChickenBurger from "@/../public/img/menu/SLAM CHICKEN BURGER (2).png";
+import menuSlamGalbiBurger from "@/../public/img/menu/SLAM GALBI BURGER (1).png";
+import menuTheBeefBurger from "@/../public/img/menu/THE BEEF BURGER (1).png";
+import menuTheChickenBurger from "@/../public/img/menu/THE CHICKEN BURGER (3).png";
+import menuTheCrispyGalbiBurger from "@/../public/img/menu/THE CRISPY GALBI BURGER.png";
+import menuSlamChickenGalbiRice from "@/../public/img/menu/SLAM CHICKEN & GALBI RICE.png";
+import menuChickenGalbiRice from "@/../public/img/menu/CHICKEN GALBI RICE (2).png";
+import menuCrispyGalbiRice from "@/../public/img/menu/CRISPY GALBI RICE (1).png";
+import menuCrispyGalbi from "@/../public/img/menu/CRISPY GALBI.png";
+import menuCrispyChickenThigh from "@/../public/img/menu/CRISPY CHICKEN THIGH CHICKEN.png";
+import menuFrenchFries from "@/../public/img/menu/FRENCH FRIES (1).png";
+import menuSignatureSet001 from "@/../public/img/menu/KakaoTalk_Photo_2025-10-15-17-25-38 001.png";
+import menuSignatureSet002 from "@/../public/img/menu/KakaoTalk_Photo_2025-10-15-17-25-39 002.png";
+import menuSignatureSet003 from "@/../public/img/menu/KakaoTalk_Photo_2025-10-15-17-25-39 003.png";
+import menuSignatureSet004 from "@/../public/img/menu/KakaoTalk_Photo_2025-10-15-17-25-39 004.png";
+import menuSignatureSet005 from "@/../public/img/menu/KakaoTalk_Photo_2025-10-15-17-25-40 005.png";
+import menuSignatureSet006 from "@/../public/img/menu/KakaoTalk_Photo_2025-10-15-17-25-41 006.png";
 
 export default function Home() {
   const navItems = [
@@ -80,83 +102,83 @@ export default function Home() {
   const menuItems = [
     {
       name: "SLAM BEEF BURGER",
-      image: "/img/menu/SLAM BEEF BURGER.png",
+      image: menuSlamBeefBurger,
       badge: "Best",
     },
     {
       name: "SLAM CHICKEN BURGER",
-      image: "/img/menu/SLAM CHICKEN BURGER (2).png",
+      image: menuSlamChickenBurger,
       badge: "Best",
     },
     {
       name: "SLAM GALBI BURGER",
-      image: "/img/menu/SLAM GALBI BURGER (1).png",
+      image: menuSlamGalbiBurger,
       badge: "Signature",
     },
     {
       name: "THE BEEF BURGER",
-      image: "/img/menu/THE BEEF BURGER (1).png",
+      image: menuTheBeefBurger,
     },
     {
       name: "THE CHICKEN BURGER",
-      image: "/img/menu/THE CHICKEN BURGER (3).png",
+      image: menuTheChickenBurger,
     },
     {
       name: "THE CRISPY GALBI BURGER",
-      image: "/img/menu/THE CRISPY GALBI BURGER.png",
+      image: menuTheCrispyGalbiBurger,
     },
     {
       name: "SLAM CHICKEN & GALBI RICE",
-      image: "/img/menu/SLAM CHICKEN & GALBI RICE.png",
+      image: menuSlamChickenGalbiRice,
     },
     {
       name: "CHICKEN GALBI RICE",
-      image: "/img/menu/CHICKEN GALBI RICE (2).png",
+      image: menuChickenGalbiRice,
     },
     {
       name: "CRISPY GALBI RICE",
-      image: "/img/menu/CRISPY GALBI RICE (1).png",
+      image: menuCrispyGalbiRice,
     },
     {
       name: "CRISPY GALBI",
-      image: "/img/menu/CRISPY GALBI.png",
+      image: menuCrispyGalbi,
     },
     {
       name: "CRISPY CHICKEN THIGH",
-      image: "/img/menu/CRISPY CHICKEN THIGH CHICKEN.png",
+      image: menuCrispyChickenThigh,
     },
     {
       name: "GOLDEN FRIES",
-      image: "/img/menu/FRENCH FRIES (1).png",
+      image: menuFrenchFries,
     },
     {
       name: "Signature Set 001",
-      image: "/img/menu/KakaoTalk_Photo_2025-10-15-17-25-38 001.png",
+      image: menuSignatureSet001,
       badge: "SET",
     },
     {
       name: "Signature Set 002",
-      image: "/img/menu/KakaoTalk_Photo_2025-10-15-17-25-39 002.png",
+      image: menuSignatureSet002,
       badge: "SET",
     },
     {
       name: "Signature Set 003",
-      image: "/img/menu/KakaoTalk_Photo_2025-10-15-17-25-39 003.png",
+      image: menuSignatureSet003,
       badge: "SET",
     },
     {
       name: "Signature Set 004",
-      image: "/img/menu/KakaoTalk_Photo_2025-10-15-17-25-39 004.png",
+      image: menuSignatureSet004,
       badge: "SET",
     },
     {
       name: "Signature Set 005",
-      image: "/img/menu/KakaoTalk_Photo_2025-10-15-17-25-40 005.png",
+      image: menuSignatureSet005,
       badge: "SET",
     },
     {
       name: "Signature Set 006",
-      image: "/img/menu/KakaoTalk_Photo_2025-10-15-17-25-41 006.png",
+      image: menuSignatureSet006,
       badge: "SET",
     },
   ];
@@ -237,7 +259,7 @@ export default function Home() {
       <header className="relative overflow-hidden text-white">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/img/fullsize.jpeg"
+            src={heroBackground}
             alt="SLAMBURGER 매장 조감"
             fill
             priority
@@ -256,7 +278,7 @@ export default function Home() {
             <div className="flex items-center justify-between gap-4">
               <Link href="#hero" className="flex items-center gap-3">
                 <Image
-                  src="/img/logo7.png"
+                  src={logoImage}
                   alt="SLAMBURGER 로고"
                   width={160}
                   height={48}
@@ -295,7 +317,7 @@ export default function Home() {
           >
             <div className="relative z-20 flex flex-col gap-6 p-6 desktop:max-w-[55%] desktop:p-10">
               <Image
-                src="/img/slogun.png"
+                src={sloganImage}
                 alt="BURGER & RICE, THE ULTIMATE BITES"
                 width={360}
                 height={60}
@@ -329,7 +351,7 @@ export default function Home() {
             </div>
             <div className="relative mt-8 h-[320px] overflow-hidden rounded-[32px] desktop:hidden">
               <Image
-                src="/img/close3.png"
+                src={closeUpImage}
                 alt="SLAMBURGER 대표 메뉴 클로즈업"
                 fill
                 sizes="100vw"
@@ -339,7 +361,7 @@ export default function Home() {
             </div>
             <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[50%] overflow-hidden rounded-l-[120px] desktop:block">
               <Image
-                src="/img/close3.png"
+                src={closeUpImage}
                 alt="SLAMBURGER 대표 메뉴 클로즈업"
                 fill
                 sizes="(min-width: 1280px) 50vw, (min-width: 1024px) 60vw, 70vw"
