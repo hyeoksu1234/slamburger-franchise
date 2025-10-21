@@ -11,7 +11,7 @@ type Props = {
   items: FaqItem[];
 };
 
-export function FaqList({ items }: Props): JSX.Element {
+export function FaqList({ items }: Props) {
   const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
   const toggleItem = (index: number) => {

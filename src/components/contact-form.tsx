@@ -23,7 +23,7 @@ const initialFormData: InquiryFormData = {
   notes: "",
 };
 
-export function ContactForm(): JSX.Element {
+export function ContactForm() {
   const [formData, setFormData] = useState<InquiryFormData>(initialFormData);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [toast, setToast] = useState<ToastState>(null);
